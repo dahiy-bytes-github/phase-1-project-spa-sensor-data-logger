@@ -1,0 +1,28 @@
+{
+  "sensorReadings": [
+    {
+      "id": "0c65",
+      "type": "Temperature",
+      "value": 30,
+      "timestamp": "2024-10-23T15:14:07.477Z"
+    },
+    {
+      "id": "5928",
+      "type": "Flow ",
+      "value": 23,
+      "timestamp": "2024-10-23T15:14:25.968Z"
+    },
+    {
+      "id": "c921",
+      "type": "Humidity ",
+      "value": 12,
+      "timestamp": "2024-10-22T16:35:18.414Z"
+    },
+    {
+      "id": "b101",
+      "type": "Pressure",
+      "value": 172,
+      "timestamp": "2024-10-23T15:02:39.101Z"
+    }
+  ]
+}
