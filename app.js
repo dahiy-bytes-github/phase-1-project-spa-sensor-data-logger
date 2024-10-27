@@ -105,6 +105,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+  // Handle sort option change
+  sortBy.addEventListener('change', () => {
+    fetchAndDisplaySensors(sortBy.value);
+  });
+
+  // Initial fetch to display sensors on page load, default sorting by timestamp
+  fetchAndDisplaySensors();
+});
 
 
-})
