@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then(response => response.json())
       .then(sensor => {
-        displaySensors([sensor]);  // Append the new sensor to the UI
+        fetchAndDisplaySensors(sortBy.value); // Display all sensors, including the newly added one, sorted by value 
         form.reset();
       });
     }
@@ -113,5 +113,3 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initial fetch to display sensors on page load, default sorting by timestamp
   fetchAndDisplaySensors();
 });
-
-
