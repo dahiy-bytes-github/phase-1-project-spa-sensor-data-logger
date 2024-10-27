@@ -18,4 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
         displaySensors(sensors);
       });
   }
+    // Function to display sensors
+    function displaySensors(sensors) {
+      const sensorList = document.getElementById('sensor-list');
+      sensorList.innerHTML = '';  // Clear list before rendering new data
+
+      sensors.forEach(sensor => {
+        const sensorDiv = document.createElement('div');
+        sensorDiv.innerHTML = `
+          <p>${sensor.type}: ${sensor.value} (${sensor.timestamp})</p>
+          <button class="edit-btn" data-id="${sensor.id}">Edit</button>
+          <button class="delete-btn" data-id="${sensor.id}">Delete</button>
+        `;
+        sensorList.appendChild(sensorDiv);
+      });
+    }
+
 })
